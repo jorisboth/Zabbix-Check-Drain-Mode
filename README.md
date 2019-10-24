@@ -8,11 +8,11 @@ To make this work, do the following:
 - Put the file "checkdrainmode.ps1" in your zabbix directory
 - Add the following lines to your zabbix agent config:
 
+```
 EnableRemoteCommands=1
-
 UnsafeUserParameters=1
-
 UserParameter=drainmode,powershell -NoProfile -ExecutionPolicy Bypass -File "C:\Zabbix\checkdrainmode.ps1"
+```
 
 The script will check every minute if a host is set to drain and will raise an alert.
 

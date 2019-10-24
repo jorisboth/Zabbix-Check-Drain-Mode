@@ -1,0 +1,1 @@
+(Get-WmiObject -Class "Win32_TerminalServiceSetting" -Namespace "root\CIMV2\terminalservices" -Authentication PacketPrivacy -Impersonation Impersonate | select SessionBrokerDrainMode | format-wide | out-string).split("`n") -match '\S'

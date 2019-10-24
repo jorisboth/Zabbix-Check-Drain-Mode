@@ -1,0 +1,2 @@
+# Zabbix - Check Drain Mode
+ 
